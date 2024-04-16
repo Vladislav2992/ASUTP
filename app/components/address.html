@@ -1,0 +1,46 @@
+<section class="address">
+    <div class="container">
+        <div class="address__text">
+            <h2 class="section__title">Прием инструментов</h2>
+            <p>
+                Сдать инструмент вы можете по адресу: 
+                <br>
+                <strong>МО, г. Люберцы, Октябрьский проспект, 249</strong>
+                <br>
+                или отправить ТК
+            </p>
+            <p>
+                Прием оборудования Курьерскими службами и ТК осуществляется через менеджера
+                <br>
+                <strong>Телефон: <a href="tel:+79771821047">+79771821047</a></strong> 
+            </p>
+
+            <div class="warning">
+                <p>Въезд на охраняемую территорию, при себе иметь удостоверение личности.</p>
+                <p>Перед приездом необходимо оставить заявку с указанием ФИО водителя и государственного номера автомобиля.</p>
+            </div>
+        </div>
+        <div class="address__map">
+            <script src="https://api-maps.yandex.ru/2.1/?apikey=YOUR_API_KEY&lang=ru_RU"></script>
+            <div id="map"></div>
+            <script>
+                    const centerMap = [55.676387, 37.905195]
+                    ymaps.ready(function () {
+                        const map = new ymaps.Map('map', {
+                            center: centerMap,
+                            zoom: 16,
+                            
+                            controls: [],
+                        });
+                        var placemark = new ymaps.Placemark(
+                            centerMap,
+                                {},
+                                {preset: 'islands#greenCircleIcon'}
+                            );
+
+                        map.geoObjects.add(placemark);
+                    })
+            </script>
+        </div>
+    </div>
+</section>

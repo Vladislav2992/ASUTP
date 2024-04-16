@@ -1,0 +1,38 @@
+<section class="contact-form">
+    <div class="container">
+        <h2 class="section__title">Остались вопросы? Свяжитесь с нами для получения консультации</h2>
+        <div class="contact-form__img">
+            <img src="images/img2.png" alt="">
+
+            <form class="form" id="contact-form">
+                <div class="input-wrapper">
+                    <label for="contact-form__name" class="input-label">Имя</label>
+                    <input type="text" name="name" class="form__input" id="contact-form__name">
+                    <p>Пожалуйста, введите имя</p>
+                </div>
+                <div class="input-wrapper">
+                    <label for="contact-form__phone" class="input-label">Номер телефона</label>
+                    <input type="tel" name="tel" class="form__input" id="contact-form__phone">
+                    <p>Пожалуйста, введите корректный номер телефона</p>
+                </div>
+                <div class="input-wrapper">
+                    <label for="contact-form__select" class="input-label">Услуга</label>
+                    <div class="select-wrapper">
+                        <select name="contact-form__select" class="form__input select" id="contact-form__select" >                            
+                            <option class="form__option" value="Ремонт">Ремонт</option>
+                            <option class="form__option" value="Покупка">Покупка</option>
+                        </select>    
+                    </div>                                    
+                    <p>Пожалуйста, выберите услугу</p>
+                </div>
+                <input type="checkbox" class="form__checkbox" id="contact-form__checkbox" checked>
+                <label for="contact-form__checkbox" class="checkbox-label">
+                    Я согласен(а) на обработку <a href="#!">персональных данных</a> 
+                </label>
+    
+                <button class="btn">Связаться</button>
+            </form>
+        </div>
+        
+    </div>
+</section>

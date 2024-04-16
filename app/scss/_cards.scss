@@ -1,0 +1,160 @@
+.fromm {
+    .cards {
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px 30px;
+        }
+    
+        .btn {
+            font-size: 18px;
+        }
+    }
+    
+    .card {
+        border-radius: 10px;
+        background: #FFF;
+        box-shadow: 1px 1px 15px -3px rgba(0, 0, 0, 0.20);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .card__header {
+        background-color: $main-color;
+        padding-left: calc(13px + 14 * (100vw / 1200));
+        padding-right: calc(13px + 14 * (100vw / 1200));
+        padding-top: calc(21px + 14 * (100vw / 1200));
+        padding-bottom: calc(5px + 14 * (100vw / 1200));
+        color: #FFF;
+        height: -webkit-fill-available;
+    }
+    
+    .card__title {
+        font-family: 'Montserat';
+        font-size: clamp(22px, 5vw, 32px);
+        font-weight: 700;
+        letter-spacing: 1.28px;
+        margin-bottom: 17px;
+    }
+    
+    .card__description {
+        font-family: "Open Sans";
+        font-size: clamp(14px, 4vw, 18px);
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.72px;
+    }
+    
+    .card__body {
+        padding: calc(13px + 14 * (100vw / 1200));
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top: auto;
+    
+        img {
+            margin-bottom: 50px;
+        }
+    }
+    
+    .card__characteristics {
+        display: flex;
+        flex-direction: column;
+        gap: 27px;
+        margin-bottom: 20px;
+    }
+    
+    .card__characteristic {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+    }
+    
+    .card__property {
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 0.64px;
+    }
+    .card__value {
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 0.64px;
+    }
+    
+    .card__footer {
+        padding: calc(13px + 14 * (100vw / 1200));
+    }
+    
+    .card-modal__inner {
+        position: relative;
+        border-radius: 10px;
+        height: 80vh;
+    }
+    
+    .card__info {
+        padding: 30px;
+        border-radius: 10px;
+        border: 1px solid rgba(167, 167, 167, 0.29);
+        background: #FFF;
+        max-width: 816px;
+        overflow-x: hidden;
+        height: 100%;  
+    
+        .btn {
+            max-width: 100%;
+            font-size: 18px;
+        }
+    }
+    
+    .card__info::-webkit-scrollbar {
+        width: 5px;
+    }
+    
+    .card__info::-webkit-scrollbar-track {
+        background: #e5e5e5;
+    }
+    
+    .card__info::-webkit-scrollbar-thumb {
+        background-color: $main-color;
+        border-radius: 20px;
+    }
+    
+    .card__info-images {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    
+    .card__info-title {
+        font-family: 'Montserat';
+        font-size: 20px;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.8px;
+        margin-bottom: 30px;
+    }
+    
+    .card__info-benefits {
+        list-style: disc;
+        padding: 17px;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    
+    @media(max-width:900px) {
+        .cards .container {
+            grid-template-columns: 1fr;
+        }
+    }
+    
+    @media(max-width:575px) {
+        .card__characteristics {
+            gap: 40px;
+        }
+        .card__characteristic {
+            display: block;
+        }
+        .card__info-images {
+            flex-direction: column;
+        }
+    }
+}

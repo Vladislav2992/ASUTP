@@ -1,0 +1,42 @@
+<div class="modal-form modal">
+    <div class="modal-overlay">
+        <div class="modal-form__inner">
+            <div class="close-btn">
+                <span></span>
+                <span></span>
+            </div>
+           
+            <form  id="modal-form" class="form">
+                <h2 class="modal__title">Закажите инструмент или ремонт прямо сейчас!</h2>
+
+                <div class="input-wrapper">
+                    <label for="modal-form__name" class="input-label">Имя</label>
+                    <input type="text" name="name" class="form__input" id="modal-form__name">
+                    <p>Пожалуйста, введите имя</p>
+                </div>
+                <div class="input-wrapper">
+                    <label for="modal-form__phone" class="input-label">Номер телефона</label>
+                    <input type="tel" name="tel" class="form__input" id="modal-form__phone">
+                    <p>Пожалуйста, введите корректный номер телефона</p>
+                </div>
+                <div class="input-wrapper">
+                    <label for="modal-form__select" class="input-label">Услуга</label>
+                    <div class="select-wrapper">
+                        <select name="modal-form__select" class="form__input select" id="modal-form__select" >
+                            <option class="form__option" value="Ремонт">Ремонт</option>
+                            <option class="form__option" value="Покупка">Покупка</option>
+                        </select>    
+                    </div>                                    
+                    <p>Пожалуйста, выберите услугу</p>
+                </div>
+                <input type="checkbox" class="form__checkbox" id="modal-form__checkbox" checked>
+                <label for="modal-form__checkbox" class="checkbox-label">
+                    Я согласен(а) на обработку <a href="#!">персональных данных</a> 
+                </label>
+    
+                <button class="btn">Связаться</button>
+
+            </form>
+        </div>
+    </div>
+</div>
